@@ -39,6 +39,7 @@ public class CommonUtility extends BaseSetup {
     public WebElement waitTillPresence(By by) {
         return this.getWait().until(ExpectedConditions.visibilityOfElementLocated(by));
     }
+    
 	//6 Selects
     public void selectByIndex(WebElement ele, int index) {
         Select select = new Select(ele);
@@ -64,6 +65,7 @@ public class CommonUtility extends BaseSetup {
         Select deselect = new Select(ele);
         deselect.deselectByVisibleText(visibleText);
     }
+    
 	//6 Gets
     
     public String getElementText(By by) {
