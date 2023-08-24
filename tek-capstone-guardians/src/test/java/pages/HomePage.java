@@ -11,8 +11,8 @@ public class HomePage extends BaseSetup{
 		PageFactory.initElements(getDriver(), this);
 	}
 	
-	@FindBy(linkText = "TEKSCHOOL")
-	public WebElement tekschoolLogo;
-	
+	@FindBy(className = "home__hero-image")
+	public WebElement heroImage;
+
 }
 	

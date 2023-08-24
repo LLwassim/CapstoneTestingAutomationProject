@@ -5,17 +5,12 @@ import io.cucumber.java.en.Given;
 import pages.POMFactory;
 import utilities.CommonUtility;
 
-public class HomePageSteps extends CommonUtility{
-	
-	//We will create object of POMFactory class to access the page objects in page object classes
-	//using the get method we create in the POMFactory class
-	
+public class HomePageSteps extends CommonUtility {
 	POMFactory pomFactory = new POMFactory();
-	
+
 	@Given("User is on retail home page")
 	public void userIsOnRetailHomePage() {
-		Assert.assertTrue(pomFactory.homePage().tekschoolLogo.isDisplayed());
+		Assert.assertTrue(pomFactory.homePage().heroImage.isDisplayed());
 		logger.info("Tekschool logo is displayed");
 	}
 }
-
