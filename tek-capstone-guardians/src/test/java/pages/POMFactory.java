@@ -1,7 +1,6 @@
 package pages;
 
 import base.BaseSetup;
-import pages.HomePage;
 
 public class POMFactory extends BaseSetup{
 	

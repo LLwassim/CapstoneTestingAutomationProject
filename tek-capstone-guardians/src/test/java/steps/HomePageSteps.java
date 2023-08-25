@@ -10,7 +10,8 @@ public class HomePageSteps extends CommonUtility {
 
 	@Given("User is on retail home page")
 	public void userIsOnRetailHomePage() {
-		Assert.assertTrue(pomFactory.homePage().heroImage.isDisplayed());
+//		waitTillClickable(pomFactory.homePage().signIn);
+		Assert.assertTrue(pomFactory.homePage().signIn.isDisplayed());
 		logger.info("Tekschool logo is displayed");
 	}
 }
