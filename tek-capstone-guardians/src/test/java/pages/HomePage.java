@@ -11,7 +11,7 @@ public class HomePage extends BaseSetup{
 		PageFactory.initElements(getDriver(), this);
 	}
 	
-	@FindBy(id ="signinBtn") public WebElement signIn;
+	@FindBy(className ="home__hero") public WebElement signIn;
 
 }
 	

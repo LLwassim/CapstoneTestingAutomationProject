@@ -13,7 +13,7 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 		
 		tags = "@homePage",
 		features = ("classpath:features"),
-		glue = "steps",
+		glue = {"steps","base","pages","runner","config","utilities","base",},
 		dryRun = false,
 		plugin = {
 				"pretty",
