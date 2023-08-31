@@ -11,7 +11,7 @@ import static io.cucumber.junit.CucumberOptions.SnippetType.CAMELCASE;
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		
-		tags = "@homePage",
+		tags = "@verifyDept",
 		features = ("classpath:features"),
 		glue = {"steps","base","pages","runner","config","utilities","base",},
 		dryRun = false,
