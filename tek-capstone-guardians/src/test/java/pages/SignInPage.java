@@ -19,4 +19,19 @@ public class SignInPage extends BaseSetup {
 	//log in form 
 	@FindBy(id = "loginForm")
 	public WebElement logInForm;
+	
+	//log in email input 
+	@FindBy(id = "email")
+	public WebElement email;
+	//log in password input 
+	@FindBy(id = "password")
+	public WebElement password;
+	
+	//log in button
+	@FindBy(id = "loginBtn")
+	public WebElement logInBtn;
+	
+	//Account Link Button
+	@FindBy(id = "accountLink")
+	public WebElement accountLink;
 }
