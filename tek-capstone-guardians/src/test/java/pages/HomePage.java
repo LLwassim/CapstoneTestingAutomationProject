@@ -13,10 +13,6 @@ public class HomePage extends BaseSetup{
 		PageFactory.initElements(getDriver(), this);
 	}
 	
-	//sign in button for later
-	@FindBy(id = "signinLink")
-	public WebElement signin;
-	
 	//hamburger button 
 	@FindBy(id = "hamburgerBtn")
 	public WebElement hamburger;	

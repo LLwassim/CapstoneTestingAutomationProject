@@ -55,10 +55,8 @@ public class HomePageSteps extends CommonUtility {
 				//log the element in console 
 				logger.info("User is on " + department);
 				break;
-			}
-			
+			}	
 		}
-
 	}
 
 	@Then("options in department")
@@ -74,7 +72,5 @@ public class HomePageSteps extends CommonUtility {
 			//log the options in the side bar in console 
 			logger.info(i+" are in Department");
 		}
-		
 	}
-
 }
