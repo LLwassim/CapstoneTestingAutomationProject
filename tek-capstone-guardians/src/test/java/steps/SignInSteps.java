@@ -2,6 +2,7 @@ package steps;
 
 import org.junit.Assert;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.POMFactory;
@@ -19,4 +20,17 @@ public class SignInSteps extends CommonUtility {
 	public void verifySignInPage() {
 		Assert.assertTrue(isElementDisplayed(factory.signInPage().logInForm));
 	}
+	
+	 @And("User enter email 'bro@gmail.com' and password 'Boomer@2023'")
+	 public void submitText() {
+	
+	 }
+	 @And("User click on login button")
+	 public void clickLogin() {
+		 
+	 }
+	 @Then("User should be logged in into Account")
+	public void loggedIn() {
+		 
+	 }
 }
