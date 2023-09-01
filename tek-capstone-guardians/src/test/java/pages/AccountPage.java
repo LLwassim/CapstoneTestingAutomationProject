@@ -18,7 +18,7 @@ public class AccountPage extends BaseSetup {
 	@FindBy(id = "personalUpdateBtn")
 	public WebElement personalBtn;
 	
-	@FindBy(xpath = "//div[contains(text(),'Personal Information Updated Successfully')]")
-	public WebElement updateMessage;
+	@FindBy(xpath = "/html[1]/body[1]/div[1]/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/div[1]/div[1]/h1[1]")
+	public WebElement accountName;
 	
 }

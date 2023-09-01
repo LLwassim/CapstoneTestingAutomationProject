@@ -1,6 +1,9 @@
 package steps;
 
 import org.junit.Assert;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -9,6 +12,7 @@ import utilities.CommonUtility;
 
 public class AccountPageSteps extends CommonUtility {
 
+	private String name;
 	POMFactory factory = new POMFactory();
 
 //	Scenario: Verify User can update Profile Information
@@ -19,7 +23,13 @@ public class AccountPageSteps extends CommonUtility {
 
 	@And("User update Name ‘NameValue’ and Phone ‘PhoneValue’")
 	public void sendUpdateData() {
-		sendText(factory.signInPage().nameInput, generateRandomName());
+		factory.signInPage().nameInput.sendKeys(Keys.COMMAND + "a");
+		factory.signInPage().nameInput.sendKeys(Keys.DELETE);
+		clearTextUsingSendKeys(factory.accountPage().phoneInput);
+		logger.info("text is cleared");
+		String name = generateRandomName();
+		this.name = name;
+		sendText(factory.signInPage().nameInput, name );
 		sendText(factory.accountPage().phoneInput, generateRandomPhoneNumber());
 	}
 	@And("User click on Update button")
@@ -28,7 +38,7 @@ public class AccountPageSteps extends CommonUtility {
 	}
 	@Then("user profile information should be updated")
 	public void accountUpdated() {
-		Assert.assertTrue(isElementDisplayed(factory.accountPage().updateMessage));
+		Assert.assertEquals(factory.accountPage().accountName.getText(), name);
 	}
 
 //	Scenario: Verify User can add a payment method

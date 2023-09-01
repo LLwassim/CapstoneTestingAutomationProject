@@ -102,7 +102,7 @@ public class CommonUtility extends BaseSetup {
 	
 	//6 Shortcut
     public void clearTextUsingSendKeys(WebElement toClear) {
-        toClear.sendKeys(Keys.CONTROL + "a");
+        toClear.sendKeys(Keys.COMMAND + "a");
         toClear.sendKeys(Keys.DELETE);
     }
     public void HighlightElement(WebElement ele) {
