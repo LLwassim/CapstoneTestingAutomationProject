@@ -23,10 +23,10 @@ public class SignInSteps extends CommonUtility {
 	}
 
 	// enter email and password
-	@And("User enter email 'bro@gmail.com' and password 'Boomer@2023'")
-	public void submitSignInText() {
-		sendText(factory.signInPage().email, "bro@gmail.com");
-		sendText(factory.signInPage().password, "Boomer@2023");
+	@And("User enter email {string} and password {string}")
+	public void userEnterEmailAndPassword(String email, String password) {
+		sendText(factory.signInPage().emailsign, email);
+		sendText(factory.signInPage().passwordsign, password);
 	}
 
 	// click on log in button

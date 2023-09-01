@@ -193,6 +193,8 @@ public class CommonUtility extends BaseSetup {
         waitTillClickable(by).click();
     }
     
+    //Random Generators
+    
     //Random Email Generator 
     public static String generateRandomEmail() {
         String[] domains = {"gmail.com", "yahoo.com", "outlook.com", "example.com"};
@@ -226,6 +228,38 @@ public class CommonUtility extends BaseSetup {
         }
 
         return password.toString();
+    }
+    //random number
+    public static String generateRandomPhoneNumber() {
+        Random random = new Random();
+
+        // Generate random area code (3 digits)
+        int areaCode = random.nextInt(900) + 100;
+
+        // Generate random exchange code (3 digits)
+        int exchangeCode = random.nextInt(900) + 100;
+
+        // Generate random subscriber number (4 digits)
+        int subscriberNumber = random.nextInt(9000) + 1000;
+
+        return String.format("(%03d) %03d-%04d", areaCode, exchangeCode, subscriberNumber);
+    }
+    
+    //random name 
+    public static String generateRandomName() {
+        String[] firstNames = {
+            "John", "Emma", "Michael", "Olivia","Hamid", "Amine","Rashid","Zack", "William", "Ava", "James", "Sophia", "Ethan", "Isabella", "Jamal", "Luke", "Wassim", "Ahmed", "Homayoon", "Shaiq", "Yusuf"     
+        };
+
+        String[] lastNames = {
+            "Smith", "Johnson", "Williams", "Jones", "Brown", "Davis", "Miller", "Wilson", "Moore", "Taylor", "Mohamed","Martinez","Dawit", "Varga", "Vegas",
+        };
+
+        Random random = new Random();
+        String randomFirstName = firstNames[random.nextInt(firstNames.length)];
+        String randomLastName = lastNames[random.nextInt(lastNames.length)];
+
+        return randomFirstName + " " + randomLastName;
     }
 }
 

@@ -20,6 +20,14 @@ public class SignInPage extends BaseSetup {
 	@FindBy(id = "loginForm")
 	public WebElement logInForm;
 	
+	//sign in first time email
+	@FindBy(id = "email")
+	public WebElement emailsign;
+	
+	@FindBy(id = "password")
+	public WebElement passwordsign;
+	
+	//NEW ACCOUNT
 	//log in name input 
 	@FindBy(id = "nameInput")
 	public WebElement nameInput;
