@@ -20,13 +20,25 @@ public class SignInPage extends BaseSetup {
 	@FindBy(id = "loginForm")
 	public WebElement logInForm;
 	
+	//log in name input 
+	@FindBy(id = "nameInput")
+	public WebElement nameInput;
+	
 	//log in email input 
-	@FindBy(id = "email")
+	@FindBy(id = "emailInput")
 	public WebElement email;
+	
 	//log in password input 
-	@FindBy(id = "password")
+	@FindBy(id = "passwordInput")
 	public WebElement password;
 	
+	//confirm password input 
+	@FindBy(id = "confirmPasswordInput")
+	public WebElement confirmPassword;
+	
+	//Sign Up Button
+	@FindBy(id = "signupBtn")
+	public WebElement signUpBtn;
 	//log in button
 	@FindBy(id = "loginBtn")
 	public WebElement logInBtn;
@@ -34,4 +46,8 @@ public class SignInPage extends BaseSetup {
 	//Account Link Button
 	@FindBy(id = "accountLink")
 	public WebElement accountLink;
+	
+	//Create New Account Button
+	@FindBy(id = "newAccountBtn")
+	public WebElement newAccountBtn;
 }

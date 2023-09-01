@@ -1,6 +1,7 @@
 package utilities;
 
 import base.BaseSetup;
+import java.util.Random;
 import java.time.Duration;
 import java.util.Set;
 import org.openqa.selenium.By;
@@ -18,6 +19,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import java.security.SecureRandom;
 
 public class CommonUtility extends BaseSetup {
 
@@ -189,6 +191,41 @@ public class CommonUtility extends BaseSetup {
     }
     public void click(By by) {
         waitTillClickable(by).click();
+    }
+    
+    //Random Email Generator 
+    public static String generateRandomEmail() {
+        String[] domains = {"gmail.com", "yahoo.com", "outlook.com", "example.com"};
+        String[] prefixes = {"user", "test", "random", "email", "customer"};
+        String[] suffixes = {"123", "456", "789", "abc", "xyz"};
+
+        Random random = new Random();
+        String randomPrefix = prefixes[random.nextInt(prefixes.length)];
+        String randomSuffix = suffixes[random.nextInt(suffixes.length)];
+        String randomDomain = domains[random.nextInt(domains.length)];
+
+        return randomPrefix + "." + randomSuffix + "@" + randomDomain;
+    }
+    
+    //random password Generator 
+    public static String generateRandomPassword(int length) {
+        String lowercaseChars = "abcdefghijklmnopqrstuvwxyz";
+        String uppercaseChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        String numericChars = "0123456789";
+        String specialChars = "!@#$%^&*";
+
+        String allChars = lowercaseChars + uppercaseChars + numericChars + specialChars;
+
+        Random random = new SecureRandom();
+        StringBuilder password = new StringBuilder();
+
+        for (int i = 0; i < length; i++) {
+            int randomIndex = random.nextInt(allChars.length());
+            char randomChar = allChars.charAt(randomIndex);
+            password.append(randomChar);
+        }
+
+        return password.toString();
     }
 }
 
