@@ -13,15 +13,15 @@ Scenario: Verify User can update Profile Information
     And User click on Update button
     Then user profile information should be updated
     
-#Scenario: Verify User can add a payment method
-    #When User click on Account option
-    #And User click on Add a payment method link
-    #And User fill Debit or credit card information
+Scenario: Verify User can add a payment method
+    When User click on Account option
+    And User click on Add a payment method link
+    And User fill Debit or credit card information
     #|cardNumber|nameOnCard|expirationMonth|expirationYear|securityCode|
     #|value     | value    |value          |value         |value       |
     #And User click on Add your card button
     #Then a message should be displayed ‘Payment Method added successfully’
-    #
+    
 #Scenario: Verify User can edit Debit or Credit card
     #When User click on Account option
     #And User click on Edit option of card section

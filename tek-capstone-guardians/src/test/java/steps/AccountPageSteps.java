@@ -41,17 +41,19 @@ public class AccountPageSteps extends CommonUtility {
 		Assert.assertEquals(factory.accountPage().accountName.getText(), name);
 	}
 
-//	Scenario: Verify User can add a payment method
-//	@When("User click on Account option")
-//	public void hds() {
-//int a = 0;
-//	}
+	//Scenario: Verify User can add a payment method
+
 //
-//	@And("User click on Add a payment method link")
-//	public void hsdd() {
-//		int a = 0;
-//	}
-//
+	@And("User click on Add a payment method link")
+	public void hsdd() {
+		click(factory.accountPage().paymentMethodLink);
+	}
+	 @And ("User fill Debit or credit card information")
+	 public void fillInfo() {
+		 sendText(factory.accountPage().cardNumberInput, "hi");
+		 sendText(factory.accountPage().cvvInput, "i");
+		 sendText(factory.accountPage().nameOnCard, generateRandomName());
+	 }
 //	// |cardNumber|nameOnCard|expirationMonth|expirationYear|securityCode||value|value|value|value|value|
 //	
 //	@And("User click on Add your card button")
