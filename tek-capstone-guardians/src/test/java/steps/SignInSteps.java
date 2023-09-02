@@ -6,6 +6,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.POMFactory;
 import utilities.CommonUtility;
+import utilities.RandomDataGenerator;
 
 public class SignInSteps extends CommonUtility {
 	POMFactory factory = new POMFactory();
@@ -56,9 +57,9 @@ public class SignInSteps extends CommonUtility {
 	@And("User fill the signUp information with below data")
 	public void fillUpInfo() {
 		
-		String Pass = generateRandomPassword(12);
+		String Pass = RandomDataGenerator.generateRandomPassword(12);
 		sendText(factory.signInPage().nameInput, "bobby");
-		sendText(factory.signInPage().email, generateRandomEmail());
+		sendText(factory.signInPage().email, RandomDataGenerator.generateRandomEmail());
 		sendText(factory.signInPage().password, Pass);
 		sendText(factory.signInPage().confirmPassword, Pass);
 	}

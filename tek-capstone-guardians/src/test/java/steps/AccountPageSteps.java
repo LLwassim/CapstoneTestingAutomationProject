@@ -9,6 +9,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import pages.POMFactory;
 import utilities.CommonUtility;
+import utilities.RandomDataGenerator;
 
 public class AccountPageSteps extends CommonUtility {
 
@@ -27,10 +28,10 @@ public class AccountPageSteps extends CommonUtility {
 		factory.signInPage().nameInput.sendKeys(Keys.DELETE);
 		clearTextUsingSendKeys(factory.accountPage().phoneInput);
 		logger.info("text is cleared");
-		String name = generateRandomName();
+		String name = RandomDataGenerator.generateRandomName();
 		this.name = name;
 		sendText(factory.signInPage().nameInput, name );
-		sendText(factory.accountPage().phoneInput, generateRandomPhoneNumber());
+		sendText(factory.accountPage().phoneInput, RandomDataGenerator.generateRandomPhoneNumber());
 	}
 	@And("User click on Update button")
 	public void clickUpdate() {
@@ -45,26 +46,31 @@ public class AccountPageSteps extends CommonUtility {
 
 //
 	@And("User click on Add a payment method link")
-	public void hsdd() {
+	public void clickAddPayment() {
 		click(factory.accountPage().paymentMethodLink);
 	}
 	 @And ("User fill Debit or credit card information")
 	 public void fillInfo() {
-		 sendText(factory.accountPage().cardNumberInput, "hi");
-		 sendText(factory.accountPage().cvvInput, "i");
-		 sendText(factory.accountPage().nameOnCard, generateRandomName());
+		 sendText(factory.accountPage().cardNumberInput, RandomDataGenerator.generateRandomCardNumber());
+		 sendText(factory.accountPage().cvvInput, "293");
+		 sendText(factory.accountPage().nameOnCard, RandomDataGenerator.generateRandomName());
+
+		 for(int i = 0; i < 0; i++) {
+			 selectByIndex(factory.accountPage().expInp, i);
+			 logger.info(i);
+		 }
 	 }
-//	// |cardNumber|nameOnCard|expirationMonth|expirationYear|securityCode||value|value|value|value|value|
+// |cardNumber|nameOnCard|expirationMonth|expirationYear|securityCode||value|value|value|value|value|
 //	
-//	@And("User click on Add your card button")
-//	public void hsd() {
-//		int a = 0;
-//	}
-//
-//	@Then("a message should be displayed‘Payment Method added successfully’​")
-//	public void hsdddd() {
-//		int a = 0;
-//	}
+	@And("User click on Add your card button")
+	public void clickAddCardBtn() {
+		click(factory.accountPage().paymentSubmitBtn);
+	}
+
+	@Then("a message should be displayed ‘Payment Method added successfully’")
+	public void hsdddd() {
+		Assert.assertTrue(isElementDisplayed(factory.accountPage().paymentEditBtn));
+	}
 //
 ////	Scenario: Verify User can edit Debit or Credit card
 //	@When("User click on Account option")

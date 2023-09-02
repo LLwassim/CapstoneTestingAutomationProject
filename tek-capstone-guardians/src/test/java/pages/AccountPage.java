@@ -30,9 +30,19 @@ public class AccountPage extends BaseSetup {
 	@FindBy(id = "cardNumberInput")
 	public WebElement cardNumberInput;
 	//Name on Card input
-	@FindBy(xpath = "nameOnCardInput")
+	@FindBy(id = "nameOnCardInput")
 	public WebElement nameOnCard;
 	//CVV input
-	@FindBy(xpath = "securityCodeInput")
+	@FindBy(id = "securityCodeInput")
 	public WebElement cvvInput;
+	//exp month
+	@FindBy(id = "expirationMonthInput")
+	public WebElement expInp;
+	//payment submit button
+	@FindBy(id = "paymentSubmitBtn")
+	public WebElement paymentSubmitBtn;
+	
+	//edit button
+	@FindBy(xpath = "//button[contains(text(),'Edit')]")
+	public WebElement paymentEditBtn;
 }
