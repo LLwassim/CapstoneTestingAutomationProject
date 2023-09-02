@@ -1,9 +1,13 @@
 package steps;
 
+import java.util.List;
+import java.util.Map;
+
 import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 
+import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -71,39 +75,49 @@ public class AccountPageSteps extends CommonUtility {
 	public void hsdddd() {
 		Assert.assertTrue(isElementDisplayed(factory.accountPage().paymentEditBtn));
 	}
-//
-////	Scenario: Verify User can edit Debit or Credit card
-//	@When("User click on Account option")
-//	public void hsd3() {
-//		int a = 0;
-//	}
-//
-//	@And("User click on Edit option of card section")
-//	public void ehs() {
-//		int a = 0;
-//	}
-//
-//	@And("user edit information with below data")
-//	public void hs33() {
-//
-//	}
-//
-//	// |cardNumber|nameOnCard|expirationMonth|expirationYear|securityCode||value|value|value|value|value|
-//	@And("user click on Update Your Card button")
-//	public void h2s() {
-//
-//	}
-//
-//	@Then("a message should be displayed‘Payment Method updated Successfully’​")
-//	public void hsq() {
-//
-//	}
+
+//	Scenario: Verify User can edit Debit or Credit card
+	
+	@And("User click on Edit option of card section")
+	public void clickAccount4() {
+		click(factory.accountPage().cardHolderDiv);
+		click(factory.accountPage().paymentEditBtn);
+	}
+
+	@And("user edit information with below data")
+	//Access the datatable in cucumber and use as a paramater
+	public void userEditInformationWithBelowData(DataTable dataTable) {
+		//make a map list to create a list of key pairs
+		List<Map<String, String>> cardInfo = dataTable.asMaps(String.class, String.class);
+		for (int i = 0; i < cardInfo.size(); i++) {
+			factory.accountPage().cardNumberInput.clear();
+			sendText(factory.accountPage().cardNumberInput, RandomDataGenerator.generateRandomCardNumber());
+			factory.accountPage().nameOnCard.clear();
+			sendText(factory.accountPage().nameOnCard, RandomDataGenerator.generateRandomName());
+			sendText(factory.accountPage().expInp, cardInfo.get(0).get("expirationMonth"));
+			sendText(factory.accountPage().expInp, cardInfo.get(0).get("expirationYear"));
+			factory.accountPage().cvvInput.clear();
+			sendText(factory.accountPage().cvvInput, cardInfo.get(0).get("securityCode"));
+		}
+	}
+	// |cardNumber|nameOnCard|expirationMonth|expirationYear|securityCode||value|value|value|value|value|
+	@And("user click on Update Your Card button")
+	public void clickUpdateCard() {
+		click(factory.accountPage().paymentSubmitBtn);
+	}
+
+	@Then("a message should be displayed ‘Payment Method updated Successfully’")
+	public void isMessDisplayed() {
+		String payUpMsg = factory.accountPage().payUpdateMsg.getText();
+		if(payUpMsg == "Payment Method updated Successfully") {
+			Assert.assertTrue(factory.accountPage().paymentEditBtn.isDisplayed());
+					}
+		
+	}
+}
 //
 ////	Scenario: Verify User can remove Debit or Credit card
-//	@When("User click on Account option")
-//	public void qwhs() {
-//
-//	}
+
 //
 //	@And("User click on remove option of card section")
 //	public void hees() {
@@ -186,4 +200,4 @@ public class AccountPageSteps extends CommonUtility {
 //
 //	}
 
-}
+

@@ -45,4 +45,12 @@ public class AccountPage extends BaseSetup {
 	//edit button
 	@FindBy(xpath = "//button[contains(text(),'Edit')]")
 	public WebElement paymentEditBtn;
+	
+	//payment added message
+	@FindBy(xpath = "//body/div[@id='root']/div[2]/div[1]/div[1]/button[1]")
+	public WebElement payUpdateMsg;
+	
+	//Card Holder Div
+	@FindBy(xpath = "//body/div[@id='root']/div[1]/div[1]/div[3]/div[1]/div[2]/div[1]/div[1]/div[1]/div[1]")
+	public WebElement cardHolderDiv;
 }

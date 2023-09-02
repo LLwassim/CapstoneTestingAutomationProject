@@ -17,20 +17,21 @@ Scenario: Verify User can add a payment method
     When User click on Account option
     And User click on Add a payment method link
     And User fill Debit or credit card information
-    |cardNumber|nameOnCard|expirationMonth|expirationYear|securityCode|
-    |value     | value    |value          |value         |value       |
-    And User click on Add your card button
-    Then a message should be displayed ‘Payment Method added successfully’
-    
-#Scenario: Verify User can edit Debit or Credit card
-    #When User click on Account option
-    #And User click on Edit option of card section
-    #And user edit information with below data
     #|cardNumber|nameOnCard|expirationMonth|expirationYear|securityCode|
     #|value     | value    |value          |value         |value       |
-    #And user click on Update Your Card button
-    #Then a message should be displayed ‘Payment Method updated Successfully’
-    #
+    And User click on Add your card button
+    Then a message should be displayed ‘Payment Method added successfully’
+
+@editCard  
+Scenario: Verify User can edit Debit or Credit card
+    When User click on Account option
+    And User click on Edit option of card section
+    And user edit information with below data
+    |cardNumber|nameOnCard|expirationMonth|expirationYear|securityCode|
+    |value     | value    |9          |27         |445      |
+    And user click on Update Your Card button
+    Then a message should be displayed ‘Payment Method updated Successfully’
+    
 #Scenario: Verify User can remove Debit or Credit card
     #When User click on Account option
     #And User click on remove option of card section
