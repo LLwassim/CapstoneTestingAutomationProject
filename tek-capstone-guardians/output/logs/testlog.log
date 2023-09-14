@@ -180,3 +180,120 @@
 2023-09-02 16:40:59,688 - logger_file -INFO - text is cleared
 2023-09-02 16:46:56,421 - logger_file -INFO - text is cleared
 2023-09-02 16:51:57,075 - logger_file -INFO - text is cleared
+2023-09-08 11:25:01,531 - logger_file -INFO - text is cleared
+2023-09-13 21:19:49,869 - logger_file -INFO - text is cleared
+2023-09-13 21:20:09,016 - logger_file -INFO - card remove button clicked successfully
+2023-09-13 21:20:09,035 - logger_file -INFO - payment card removed successfully.
+2023-09-13 21:20:14,296 - logger_file -INFO - add address link clicked.
+2023-09-13 21:24:31,337 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-13 21:24:31,361 - logger_file -INFO - Option Electronics is displayed
+2023-09-13 21:24:31,376 - logger_file -INFO - Option Computers is displayed
+2023-09-13 21:24:31,391 - logger_file -INFO - Option Smart Home is displayed
+2023-09-13 21:24:31,404 - logger_file -INFO - Option Sports is displayed
+2023-09-13 21:24:31,417 - logger_file -INFO - Option Automative is displayed
+2023-09-13 21:24:35,664 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-13 21:24:35,908 - logger_file -INFO - User is on Electronics
+2023-09-13 21:24:40,056 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-13 21:24:40,301 - logger_file -INFO - User is on Computers
+2023-09-13 21:24:44,894 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-13 21:24:45,146 - logger_file -INFO - User is on Smart Home
+2023-09-13 21:24:49,828 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-13 21:24:50,087 - logger_file -INFO - User is on Sports
+2023-09-13 21:24:54,664 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 11:26:38,806 - logger_file -INFO - text is cleared
+2023-09-14 11:26:57,331 - logger_file -INFO - card remove button clicked successfully
+2023-09-14 11:26:57,357 - logger_file -INFO - payment card removed successfully.
+2023-09-14 11:27:02,982 - logger_file -INFO - add address link clicked.
+2023-09-14 11:37:34,464 - logger_file -INFO - text is cleared
+2023-09-14 11:37:53,640 - logger_file -INFO - card remove button clicked successfully
+2023-09-14 11:37:53,671 - logger_file -INFO - payment card removed successfully.
+2023-09-14 11:37:59,180 - logger_file -INFO - add address link clicked.
+2023-09-14 11:59:42,506 - logger_file -INFO - text is cleared
+2023-09-14 12:54:18,512 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 12:54:18,535 - logger_file -INFO - Option Electronics is displayed
+2023-09-14 12:54:18,548 - logger_file -INFO - Option Computers is displayed
+2023-09-14 12:54:18,583 - logger_file -INFO - Option Smart Home is displayed
+2023-09-14 12:54:18,595 - logger_file -INFO - Option Sports is displayed
+2023-09-14 12:54:18,609 - logger_file -INFO - Option Automative is displayed
+2023-09-14 12:54:22,951 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 12:54:23,194 - logger_file -INFO - User is on Electronics
+2023-09-14 12:54:27,838 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 12:54:28,092 - logger_file -INFO - User is on Computers
+2023-09-14 12:54:32,440 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 12:54:32,723 - logger_file -INFO - User is on Smart Home
+2023-09-14 12:54:37,110 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 12:54:37,377 - logger_file -INFO - User is on Sports
+2023-09-14 12:54:42,089 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 14:08:08,490 - logger_file -INFO - Order Placed Successfully
+2023-09-14 14:08:08,493 - logger_file -INFO - Order Placed Succesfuly
+2023-09-14 14:09:20,917 - logger_file -INFO - Order Placed Successfully
+2023-09-14 14:09:20,920 - logger_file -INFO - Order Placed Successfully
+2023-09-14 14:14:41,651 - logger_file -INFO - Order Placed Successfully
+2023-09-14 14:14:41,654 - logger_file -INFO - Order Placed Successfully
+2023-09-14 14:17:53,431 - logger_file -INFO - Order Placed Successfully
+2023-09-14 14:17:53,434 - logger_file -INFO - Order Placed Successfully
+2023-09-14 14:19:15,304 - logger_file -INFO - Order Placed Successfully
+2023-09-14 14:19:15,309 - logger_file -INFO - Order Placed Successfully
+2023-09-14 14:22:15,527 - logger_file -INFO - Order Placed Successfully
+2023-09-14 14:22:15,532 - logger_file -INFO - Order Placed Successfully
+2023-09-14 14:22:15,533 - logger_file -INFO - Order Placed Successfully
+2023-09-14 14:23:23,071 - logger_file -INFO - Order Placed Successfully
+2023-09-14 14:23:23,073 - logger_file -INFO - Order Placed Successfully
+2023-09-14 14:23:23,074 - logger_file -INFO - Order Placed Successfully
+2023-09-14 17:35:36,075 - logger_file -INFO - Order Placed Successfully
+2023-09-14 17:35:36,078 - logger_file -INFO - Order Placed Successfully
+2023-09-14 17:35:36,088 - logger_file -INFO - Order Placed Successfully
+2023-09-14 18:31:57,641 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 18:31:57,661 - logger_file -INFO - Option Electronics is displayed
+2023-09-14 18:31:57,676 - logger_file -INFO - Option Computers is displayed
+2023-09-14 18:31:57,688 - logger_file -INFO - Option Smart Home is displayed
+2023-09-14 18:31:57,700 - logger_file -INFO - Option Sports is displayed
+2023-09-14 18:31:57,713 - logger_file -INFO - Option Automative is displayed
+2023-09-14 18:32:01,958 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 18:32:02,213 - logger_file -INFO - User is on Electronics
+2023-09-14 18:32:06,684 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 18:32:06,937 - logger_file -INFO - User is on Computers
+2023-09-14 18:32:11,341 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 18:32:11,625 - logger_file -INFO - User is on Smart Home
+2023-09-14 18:32:16,327 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 18:32:16,660 - logger_file -INFO - User is on Sports
+2023-09-14 18:32:21,045 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 18:32:35,470 - logger_file -INFO - Order Placed Successfully
+2023-09-14 18:32:35,471 - logger_file -INFO - Order Placed Successfully
+2023-09-14 18:32:35,476 - logger_file -INFO - Order Placed Successfully
+2023-09-14 18:39:05,908 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 18:39:05,926 - logger_file -INFO - Option Electronics is displayed
+2023-09-14 18:39:05,944 - logger_file -INFO - Option Computers is displayed
+2023-09-14 18:39:05,955 - logger_file -INFO - Option Smart Home is displayed
+2023-09-14 18:39:05,966 - logger_file -INFO - Option Sports is displayed
+2023-09-14 18:39:05,980 - logger_file -INFO - Option Automative is displayed
+2023-09-14 18:39:10,220 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 18:39:10,474 - logger_file -INFO - User is on Electronics
+2023-09-14 18:39:14,808 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 18:39:15,062 - logger_file -INFO - User is on Computers
+2023-09-14 18:39:19,563 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 18:39:19,819 - logger_file -INFO - User is on Smart Home
+2023-09-14 18:39:24,276 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 18:39:24,538 - logger_file -INFO - User is on Sports
+2023-09-14 18:39:28,859 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 18:39:43,322 - logger_file -INFO - Order Placed Successfully
+2023-09-14 18:39:43,324 - logger_file -INFO - Order Placed Successfully
+2023-09-14 18:39:43,328 - logger_file -INFO - Order Placed Successfully
+2023-09-14 19:11:11,158 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 19:11:11,177 - logger_file -INFO - Option Electronics is displayed
+2023-09-14 19:11:11,189 - logger_file -INFO - Option Computers is displayed
+2023-09-14 19:11:11,206 - logger_file -INFO - Option Smart Home is displayed
+2023-09-14 19:11:11,217 - logger_file -INFO - Option Sports is displayed
+2023-09-14 19:11:11,235 - logger_file -INFO - Option Automative is displayed
+2023-09-14 19:11:16,020 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 19:11:16,268 - logger_file -INFO - User is on Electronics
+2023-09-14 19:11:20,561 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 19:11:20,812 - logger_file -INFO - User is on Computers
+2023-09-14 19:11:25,483 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 19:11:25,755 - logger_file -INFO - User is on Smart Home
+2023-09-14 19:11:30,470 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 19:11:30,730 - logger_file -INFO - User is on Sports
+2023-09-14 19:11:35,429 - logger_file -INFO - Hamburger Dropdown Clicked.
+2023-09-14 19:11:49,506 - logger_file -INFO - Order Placed Successfully
+2023-09-14 19:11:49,508 - logger_file -INFO - Order Placed Successfully
+2023-09-14 19:11:49,513 - logger_file -INFO - Order Placed Successfully

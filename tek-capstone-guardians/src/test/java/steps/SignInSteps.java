@@ -57,7 +57,7 @@ public class SignInSteps extends CommonUtility {
 	@And("User fill the signUp information with below data")
 	public void fillUpInfo() {
 		
-		String Pass = RandomDataGenerator.generateRandomPassword(12);
+		String Pass = RandomDataGenerator.generateRandomPassword(22);
 		sendText(factory.signInPage().nameInput, "bobby");
 		sendText(factory.signInPage().email, RandomDataGenerator.generateRandomEmail());
 		sendText(factory.signInPage().password, Pass);
