@@ -45,11 +45,11 @@ public class AccountPageSteps extends CommonUtility {
 	@Then("user profile information should be updated")
 	public void accountUpdated() {
 		Assert.assertEquals(factory.accountPage().accountName.getText(), name);
+		logger.info(name);
 	}
 
 	// Scenario: Verify User can add a payment method
 
-//
 	@And("User click on Add a payment method link")
 	public void clickAddPayment() {
 		click(factory.accountPage().paymentMethodLink);
