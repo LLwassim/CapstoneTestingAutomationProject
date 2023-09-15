@@ -193,7 +193,7 @@ public class OrderSteps extends CommonUtility {
 		click(factory.orderPage().orderLink);
 	}
 
-	@And("User clicks on first order in list")
+	@And("clicks on first order in list")
 	public void clicksFirstOrder() {
 		click(factory.orderPage().ItemsShowDetails);
 	}

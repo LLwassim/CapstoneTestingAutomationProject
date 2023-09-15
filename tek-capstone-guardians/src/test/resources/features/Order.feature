@@ -57,7 +57,7 @@ Scenario: Verify User can Return the order
     And User click on login button
     And User should be logged in into Account
     And User click on Orders section
-    And User click on first order in list
+    And clicks on first order in list
     And User click on Return Items button
     And User select the Return Reason "Item damaged"
     And User select the drop off service "FedEx"
