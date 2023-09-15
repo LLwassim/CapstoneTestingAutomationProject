@@ -48,7 +48,23 @@ Scenario: Verify User can cancel the order
     And User select the cancelation Reason "Bought wrong item"
     And Click Cancel
     Then a cancelation message should be displayed "Your Order Has Been Cancelled"
+
+Scenario: Verify User can place an order with Shipping address and payment Method on file
     
+    When User click on Sign in option
+    And User enter email 'bro@gmail.com' and password 'Boomer@2023'
+    And User click on login button
+    And User should be logged in into Account
+    And User change the category to "Electronics" and User search for an item "Apex Legend"
+    And User click on Search icon
+    And User clicked on apex
+    And User select quantity ‘5’
+    And User click add to Cart button
+    Then cart icon quantity should change to "5"
+    And User click on Cart option
+    And User click on Proceed to Checkout button
+    And User click on Place Your Order
+    Then message for apex should be "Order Placed Successfully"    
 @return   
 Scenario: Verify User can Return the order
 
