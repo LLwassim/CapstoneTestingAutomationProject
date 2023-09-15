@@ -297,3 +297,10 @@
 2023-09-14 19:11:49,506 [main] INFO logger_file - Order Placed Successfully
 2023-09-14 19:11:49,508 [main] INFO logger_file - Order Placed Successfully
 2023-09-14 19:11:49,513 [main] INFO logger_file - Order Placed Successfully
+2023-09-14 20:00:59,771 [main] INFO logger_file - Shaiq Brown
+2023-09-14 20:01:37,316 [main] INFO logger_file - Hamburger Dropdown Clicked.
+2023-09-14 20:01:37,426 [main] INFO logger_file - Option Electronics is displayed
+2023-09-14 20:01:37,471 [main] INFO logger_file - Option Computers is displayed
+2023-09-14 20:01:37,493 [main] INFO logger_file - Option Smart Home is displayed
+2023-09-14 20:01:37,515 [main] INFO logger_file - Option Sports is displayed
+2023-09-14 20:01:37,538 [main] INFO logger_file - Option Automative is displayed
