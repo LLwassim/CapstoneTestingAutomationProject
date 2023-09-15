@@ -213,14 +213,19 @@ public class OrderSteps extends CommonUtility {
 		selectByVisibleText(factory.orderPage().dropOffService, category);
 	}
 
-	@And("User click on Return Order button")
-	public void clickReturnOrderBtn() {
+	@And("User check if theres a check box")
+	public void checkCheckBox() {
 		if(factory.orderPage().checkBox.isDisplayed()) {
 			click(factory.orderPage().checkBox);
 		}
-		click(factory.orderPage().orderReturnAndSubmitBtn);
 	}
 
+	@And("User click on Return Order button")
+	public void clickReturnOrderBtn() {
+		waitTillClickable(factory.orderPage().orderReturnAndSubmitBtn);
+		click(factory.orderPage().orderReturnAndSubmitBtn);
+		click(factory.orderPage().orderReturnAndSubmitBtn);
+	}
 	@Then("a cancel message should be displayed {string}")
 	public void ReturnPls(String message) {
 		Assert.assertTrue(factory.orderPage().orderReturnSuccessful.isDisplayed());

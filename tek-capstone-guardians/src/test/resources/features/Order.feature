@@ -61,6 +61,7 @@ Scenario: Verify User can Return the order
     And User click on Return Items button
     And User select the Return Reason "Item damaged"
     And User select the drop off service "FedEx"
+    And User check if theres a check box 
     And User click on Return Order button
     Then a cancel message should be displayed "Return was successful"
     
