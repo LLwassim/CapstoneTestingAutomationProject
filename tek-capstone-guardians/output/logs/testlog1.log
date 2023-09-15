@@ -304,3 +304,15 @@
 2023-09-14 20:01:37,493 [main] INFO logger_file - Option Smart Home is displayed
 2023-09-14 20:01:37,515 [main] INFO logger_file - Option Sports is displayed
 2023-09-14 20:01:37,538 [main] INFO logger_file - Option Automative is displayed
+2023-09-14 20:01:41,068 [main] INFO logger_file - Hamburger Dropdown Clicked.
+2023-09-14 20:01:41,360 [main] INFO logger_file - User is on Electronics
+2023-09-14 20:01:44,776 [main] INFO logger_file - Hamburger Dropdown Clicked.
+2023-09-14 20:01:45,059 [main] INFO logger_file - User is on Computers
+2023-09-14 20:01:48,545 [main] INFO logger_file - Hamburger Dropdown Clicked.
+2023-09-14 20:01:48,854 [main] INFO logger_file - User is on Smart Home
+2023-09-14 20:01:52,584 [main] INFO logger_file - Hamburger Dropdown Clicked.
+2023-09-14 20:01:52,862 [main] INFO logger_file - User is on Sports
+2023-09-14 20:01:56,354 [main] INFO logger_file - Hamburger Dropdown Clicked.
+2023-09-14 20:02:09,273 [main] INFO logger_file - Order Placed Successfully
+2023-09-14 20:02:09,274 [main] INFO logger_file - Order Placed Successfully
+2023-09-14 20:02:09,280 [main] INFO logger_file - Order Placed Successfully
