@@ -316,3 +316,22 @@
 2023-09-14 20:02:09,273 [main] INFO logger_file - Order Placed Successfully
 2023-09-14 20:02:09,274 [main] INFO logger_file - Order Placed Successfully
 2023-09-14 20:02:09,280 [main] INFO logger_file - Order Placed Successfully
+2023-09-14 20:42:07,021 [main] INFO logger_file - Homayoon Johnson
+2023-09-14 20:42:44,334 [main] INFO logger_file - Hamburger Dropdown Clicked.
+2023-09-14 20:42:44,383 [main] INFO logger_file - Option Electronics is displayed
+2023-09-14 20:42:44,409 [main] INFO logger_file - Option Computers is displayed
+2023-09-14 20:42:44,449 [main] INFO logger_file - Option Smart Home is displayed
+2023-09-14 20:42:44,465 [main] INFO logger_file - Option Sports is displayed
+2023-09-14 20:42:44,481 [main] INFO logger_file - Option Automative is displayed
+2023-09-14 20:42:48,098 [main] INFO logger_file - Hamburger Dropdown Clicked.
+2023-09-14 20:42:48,358 [main] INFO logger_file - User is on Electronics
+2023-09-14 20:42:51,791 [main] INFO logger_file - Hamburger Dropdown Clicked.
+2023-09-14 20:42:52,066 [main] INFO logger_file - User is on Computers
+2023-09-14 20:42:55,417 [main] INFO logger_file - Hamburger Dropdown Clicked.
+2023-09-14 20:42:55,790 [main] INFO logger_file - User is on Smart Home
+2023-09-14 20:42:59,455 [main] INFO logger_file - Hamburger Dropdown Clicked.
+2023-09-14 20:42:59,918 [main] INFO logger_file - User is on Sports
+2023-09-14 20:43:03,803 [main] INFO logger_file - Hamburger Dropdown Clicked.
+2023-09-14 20:43:17,783 [main] INFO logger_file - Order Placed Successfully
+2023-09-14 20:43:17,784 [main] INFO logger_file - Order Placed Successfully
+2023-09-14 20:43:17,790 [main] INFO logger_file - Order Placed Successfully

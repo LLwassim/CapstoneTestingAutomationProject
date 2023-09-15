@@ -222,7 +222,7 @@ public class OrderSteps extends CommonUtility {
 
 	@And("User click on Return Order button")
 	public void clickReturnOrderBtn() {
-		waitTillClickable(factory.orderPage().orderReturnAndSubmitBtn);
+//		waitTillClickable(factory.orderPage().orderReturnAndSubmitBtn);
 		click(factory.orderPage().orderReturnAndSubmitBtn);
 		click(factory.orderPage().orderReturnAndSubmitBtn);
 	}
